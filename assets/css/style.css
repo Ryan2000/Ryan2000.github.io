@@ -1,0 +1,202 @@
+.demo-border {
+    /*border: 1px coral;
+    border-style: solid; */
+}
+
+.wrapper {
+    width: 100%;
+    margin-left: 20px;
+    float: left;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-image: url("../images/old_moon.png");
+
+
+}
+
+#content {
+    width: 650px;
+    margin-left: 40px;
+    float: left;
+    background-color: #ffffff;
+    /*border-style: solid;
+    border-color: #dddddd;*/
+}
+
+#content h1 {
+    font-size: xx-large;
+    margin: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid gray;
+}
+
+.profile-pic {
+    width: 140px;
+    height: 140px;
+    float: left;
+    padding-right: 10px;
+    padding-bottom: 10px;
+}
+
+#sidebar{
+    float: left;
+    width: 270px;
+    background-color: #ffffff;
+    text-align: right;
+    margin-left: 40px;
+}
+
+#sidebar img {
+    width: 45px;
+    height: 45px;
+
+}
+
+header {
+    /*width: 960px;*/
+    margin-left: 20px;
+    background-color: #ffffff;
+    border-color: #cccccc;
+    border-bottom: thin;
+}
+
+footer {
+    /*width: 960px;*/
+    margin-left: 20px;
+    clear: both;
+    margin-top: 20px;
+    background-color: #666666;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    color: white;
+    font-size: small;
+    border-top: solid thick teal;
+}
+
+p {
+    font-family: "Arial", "Helvetica Neue", Helvetica, sans-serif;
+    margin-right: 20px;
+}
+
+#Name {
+    font-family: Georgia, Times, "Times New Roman", serif;
+    margin-left: 20px;
+    margin-top: 10px;
+    background-color: teal;
+    padding: 20px;
+    width: 100px;
+    color: white;
+
+}
+
+h1 {
+    font-family: Georgia, Times, "Times New Roman", serif;
+    color: #4aaaa5;
+}
+
+h2 {
+    color: #4aaaa5;
+    font-family: Georgia, Times, "Times New Roman", serif;
+    text-align: center;
+    padding: 20px;
+
+}
+
+
+.left {
+    float:left;
+    padding-left: 20px;
+}
+
+nav {
+    float: left;
+    margin-top: 30px;
+    margin-left: 600px;
+}
+
+nav > a {
+    color: gray;
+    text-decoration: none;
+}
+
+nav > .links {
+    padding-right: 5px;
+}
+
+#social {
+    float: left;
+    border-top: 1px solid gray;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-left: 60px;
+}
+
+#Hangman {
+    width: 200px;
+    height: 200px;
+    background-image: url("../images/Hangman.png");
+}
+
+#Sun {
+    width: 200px;
+    height: 200px;
+    background-image: url("../images/Going_to_the_Sun_960x720.jpeg");
+}
+
+#NYC {
+    width: 200px;
+    height: 200px;
+    background-image: url("../images/NYCFresh.png");
+}
+
+#Dreams {
+    width: 200px;
+    height: 200px;
+    background-image: url("../images/Dreams_960x720.jpeg");
+}
+
+#Night {
+    width: 200px;
+    height: 200px;
+    background-image: url("../images/nightlife.jpg");
+}
+
+#Portfolio span {
+    position: relative;
+    color: white;
+    background-color: teal;
+    top: 130px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    float: left;
+    width: 100%;
+    text-align: center;
+}
+
+#Portfolio div {
+    margin: 20px;
+    float: left;
+}
+
+#About{
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+#Contact{
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+#Contact div {
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: teal;
+    color: white;
+    width: 75px;
+    height: 30px;
+    border: none;
+}
