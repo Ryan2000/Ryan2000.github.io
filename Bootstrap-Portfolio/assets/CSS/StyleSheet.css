@@ -85,25 +85,25 @@ label {
 #Hangman {
      width: 200px;
      height: 200px;
-     background-image: url("../images/Hangman.png");
+     background-image: url("../images/hangman.png");
  }
 
 #Sun {
      width: 200px;
      height: 200px;
-     background-image: url("../images/Going_to_the_Sun_960x720.jpeg");
+     background-image: url("../images/going_to_the_Sun_960x720.jpeg");
  }
 
 #NYC {
      width: 200px;
      height: 200px;
-     background-image: url("../images/NYCFresh.png");
+     background-image: url("../images/nycfresh.png");
  }
 
 #Dreams {
      width: 200px;
      height: 200px;
-     background-image: url("../images/Dreams_960x720.jpeg");
+     background-image: url("../images/dreams_960x720.jpeg");
  }
 
 #Night {
