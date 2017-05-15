@@ -1,0 +1,10 @@
+body {
+    background-image: url(../images/background.jpg);
+}
+
+body > div{
+    color: white;
+    background-color: black;
+    text-align: center;
+    font-size: xx-large;
+}

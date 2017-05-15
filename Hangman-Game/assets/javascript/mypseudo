@@ -1,0 +1,113 @@
+We need a basic interface
+
+Interface must display:
+
+    Press Any Key to get started
+
+    Number of Wins
+
+    The Current Word
+
+
+    Number of Guesses Remaining - Number of guesses is either based on word length or a set number.
+
+
+    And the Letter's Guessed.
+
+
+    Logic:
+
+    Program begins on Keyup.  User presses a key that activates the program
+
+    At this point the computer/program generates a word
+
+
+    Either we create a bank of words - or tie to a word bank of some sort.
+         These words will then be stored as an object inside an array.
+
+
+User enters guess.  That guess is then tested against the array for a possible match.
+
+Therefore, we must search against each index of the array
+
+If match - then letter displayed on the Current Word Line
+
+If does not match - then letter displayed on letter guessed line.
+
+Whether or not the letter matches, the number of guesses decreases by 1
+
+
+If the user guess the word or all of the letter's of the word before the number of guesses has expired
+
+Then the user wins
+
+otherwise the user loses.
+
+
+Begin new Game.
+
+
+
+
+
+
+
+Variables:
+
+    wordBank - Bank of words
+
+    userGuess - stores the guess of the user.
+
+    currentWord - represents the word being used.
+
+
+numGuess - represents the number of guesses
+
+
+numWins - represents number of wins
+
+
+lettersGuessed - respresents the letters guessed
+
+
+numloss - represents losses
+
+
+
+
+Pick secret word:
+
+
+Need a bank of words.  Either create a bank of words or import words.  Store them all in an array.  I need a random number generator to generate a number that represents the index of one of these words.
+This word is then stored as the Current Word.
+
+
+(It would be cool to display the number of spaces on screen that coresponds with the number of letters in the word)
+
+
+Now we need the user to guess.
+Step 1: Display enter your guess!
+Step 2: User can then select a letter/key.
+Step 3: If the user enters a number or character - display please enter a letter and the number of guesses is not reduced.
+Step 4: once the user enters a letter it is stored as User Guess.
+This letter is then checked against each letter of the current word.  --How are we going to do this step?
+The letter in user guess is checked against each index of the array containing the currentword.  currentWord.length using a for loop.
+
+Step 5: Reduce number of guesses
+Step 6: if user guess is a match, then display that letter in the corresponding position in the current word area - How do we do this?
+Each postion of the spaces must be mapped to the appropriate letter of the word.   Object relational mapping
+
+
+Step 7: If user guess does not match then display that letter in the lettersGuesses area.  - How?
+Erroneous letter is logged into this array
+
+Step 8:  Steps 4 - 7 will need to repeat until the word is solved or number of guesses expires.
+Step 9: If word is solved the user wins!  Display message: "You win captain!" - How?
+Win message displayed if all letter spaces are filled before numGuesses = 0
+
+Step 10: If word is not solved.  Display: "You're terrible at this game, might as well do something else."  - How?
+If letter spaces remain empty and numGuesses = 0.  Loss message displayed.
+
+Step 11: The win is recorded, or the loss is recorded.
+Step 12: Game resets and begins again.  - How?
+Once a win or loss has been recorded.  The game will reset.  upon reset the computer will pick a secret word.
