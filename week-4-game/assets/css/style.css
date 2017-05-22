@@ -1,0 +1,65 @@
+
+html{
+    height: 100%;
+}
+
+body {
+    background-image: url("../images/starwarsbackground.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100%;
+}
+
+.image_row > div > div{
+    float: left;
+    width: 100px;
+    height: 81px;
+}
+
+.img-responsive {
+    width: 98px;
+    height: 79px;
+    max-width: 98px;
+    max-height: 79px;
+}
+
+.green-border {
+    border: solid thin green;
+}
+
+.white-border {
+    border: solid 20px white;
+}
+
+h1 {
+    font-family:monospace;
+}
+
+h5 {
+    font-family:monospace;
+}
+
+.name{
+    position: relative;
+    bottom: 80px;
+    left: 20px;
+    font-size: 8px;
+}
+
+.hp {
+    position: relative;
+    bottom: 20px;
+    font-size: 10px;
+    left: -20px;
+
+}
+
+#top_message{
+    font-size: xx-large;
+    color: white;
+}
+
+#bottom_message {
+font-size: xx-large;
+color: white;
+}

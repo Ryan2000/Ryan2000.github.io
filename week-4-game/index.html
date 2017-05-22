@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>StarWars</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script type="application/javascript" src="assets/javascript/game.js" ></script>
+</head>
+<body>
+
+<div class="row">
+    <div class="col-xs-offset-8 col-sm-offset-8 col-md-offset-8 col-lg-offset-8 col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                <h1>Star Wars RPG!</h1>
+        </div>
+    </div>
+</div>
+
+<div id="pick_row" class="row image_row">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <div id="pick_Luke" class="green-border">
+            <img src="assets/images/luke_skywalker.jpg" class="img-responsive white-border" alt="Image">
+            <span class="name">Luke Skywalker</span>
+            <span class="hp">100</span>
+        </div>
+        <div id="pick_Obi" class="green-border">
+            <img src="assets/images/obi-wan-kenobi.jpg" class="img-responsive white-border" alt="Image">
+            <span class="name">Obi-wan-kenobi</span>
+            <span class="hp">120</span>
+        </div>
+        <div id="pick_Maul" class="green-border">
+            <img src="assets/images/darth_maul.jpg" class="img-responsive white-border" alt="Image">
+            <span class="name">Darth Maul</span>
+            <span class="hp">180</span>
+        </div>
+        <div id="pick_Sidious" class="green-border">
+            <img src="assets/images/darth_sidious.jpg" class="img-responsive white-border" alt="Image">
+            <span class="name">Darth Sidious</span>
+            <span class="hp">150</span>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <span><h5>Your Character</h5></span>
+    </div>
+</div>
+
+<div class="row">
+    <div id="your_character" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <img src="assets/images/luke_skywalker.jpg" class="hidden img-responsive white-border" alt="Image">
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <span><h5>Enemies Available To Attack</h5></span>
+    </div>
+</div>
+
+<div class="row image_row">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"> <!-- that makes it invisible -->
+        <div id="bad_guy_one">
+            <img src="assets/images/luke_skywalker.jpg" class="hidden img-responsive white-border" alt="Image">
+        </div>
+        <div id="bad_guy_two">
+            <img src="assets/images/luke_skywalker.jpg" class="hidden img-responsive white-border" alt="Image">
+        </div>
+        <div id="bad_guy_three">
+            <img src="assets/images/luke_skywalker.jpg" class="hidden img-responsive white-border" alt="Image">
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <span><h5>Fight Section</h5></span>
+    </div>
+</div>
+<div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <div class="btn-group">
+            <button id="attack" type="button" class="btn btn-default">Attack</button>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <span><h5>Defender</h5></span>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <div id="defender">
+            <img src="assets/images/luke_skywalker.jpg" class="hidden img-responsive white-border" alt="Image">
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <div id="top_message">
+
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <div id="bottom_message">
+
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
