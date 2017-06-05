@@ -11,7 +11,7 @@ var topics = ["Movies", "TV Shows", "Entertainment", "Politics", "Science", "Mil
 
 var images = [];
 
-var queryURL = "http://api.giphy.com/v1/gifs/search?rating(g,pg,pg-13,r)&limit=12&q="
+var queryURL = "https://api.giphy.com/v1/gifs/search?rating(g,pg,pg-13,r)&limit=12&q="
 var api_key = "&api_key=dc6zaTOxFJmzC"
 
 
@@ -75,7 +75,7 @@ function updateClickListeners() {
 
                 var label = $("#rating-" + counter).text("Rating: " + rating)  //TODO: Select the <p> tag that goes with this <img> tag
                 //TODO: Update the text of this label with the rating
-                
+
                 counter++;
 
                 img.attr('src', response.data[i].images.fixed_height_still.url);
