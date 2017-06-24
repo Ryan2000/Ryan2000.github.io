@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Index</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+          integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <!-- Latest compiled and minified JS -->
+
+    <link rel="stylesheet" type="text/css" href="assets/css/css.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+    <script src=assets/javascript/app.js></script>
+
+    <!-- Firebase Reference -->
+    <!---<script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script> --->
+
+    <script src="https://www.gstatic.com/firebasejs/4.1.2/firebase.js"></script>
+</head>
+
+
+<body>
+
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <div class="jumbotron text-center">
+                <img id="image" src="assets/images/PURCHASEPERKS_C1.png" alt="Image">
+                <p>The Authority on Rewards Tracking</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <div class="btn-group pull-right">
+                    <button type="button" id="log-in-btn" class="btn btn-default" data-target="#my-modal"
+                            data-toggle="modal">Log in
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="my-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel">Log in</h4>
+                    </div>
+                    <div class="modal-body">
+                        <!--UserName/Email-->
+                        <input id="InputUserName" type="userName" class="form-control" placeholder="UserName">
+                        <!--Password -->
+                        <input id="InputPassword" type="password" class="form-control" placeholder="Password">
+                        <!--The Submit Button -->
+                        <input id="login-submit-btn" class="btn btn-primary" type="submit" value="submit">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <div class="btn-group pull-right">
+                    <button type="button" id="sign-up-btn" class="btn btn-default" data-target="#my-modal1"
+                            data-toggle="modal">Sign up
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="my-modal1" tabindex="-1" role="dialog" aria-labelledby="gridSystemModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="gridSystemModalLabel">Sign Up</h4>
+                    </div>
+                    <!--User data plugged to firebase -->
+                    <div id="userData"></div>
+                    <div class="panel panel-primary">
+                        <div id="add-a-train" class="panel-heading text-center">
+                            <h3 class="panel-title"><strong>Sign Up Information</strong></h3> <!-- adjust this shit -->
+                        </div>
+                        <div class="panel-body">
+                            <form>
+                                <div class="form-group">
+                                    <label for="first-name"><input class="form-control" id="first-name" type="text"
+                                                                   placeholder="First Name"></label>
+                                </div>
+                                <div class="form-group">
+                                    <label for="last-name"><input class="form-control" id="last-name" type="text"
+                                                                  placeholder="Last Name"></label>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email-input"><input class="form-control" id="email-input" type="email"
+                                                                    placeholder="Email"></label>
+                                </div>
+                                <div class="form-group">
+                                    <label for="user-name"><input class="form-control" id="user-name" type="text"
+                                                                  placeholder="User Name"></label>
+                                </div>
+                                <div class="form-group">
+                                    <label for="password-input"><input class="form-control" id="password-input"
+                                                                       type="password" placeholder="Password"></label>
+                                </div>
+                                <div class="form-group">
+                                    <label for="date-of-birth">Date of Birth<input class="form-control"
+                                                                                   id="date-of-birth"
+                                                                                   type="date"></label>
+                                    <!--       https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/date -->
+                                </div>
+                                <div class="form-group">
+                                    <label for="cell-phone-number">Cell Phone<input class="form-control"
+                                                                                    id="cell-phone-number" type="tel"
+                                                                                    placeholder="888-888-8888"
+                                                                                    maxlength="12" required="required"></label>
+                                    <!-- pattern = "[0-9]{3} [0-9]{3} [0-9]{4}" -->
+                                </div>
+                            </form>
+                            <div class="modal-footer">
+                                <button type="button" style="color: #1497A3" id=" close-btn" class="btn btn-default"
+                                        data-dismiss="modal">Close
+                                </button>
+                                <button id="add-user-btn" type="submit" class="btn btn-primary">Save changes</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

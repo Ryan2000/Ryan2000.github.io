@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Access</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+          integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <!-- Latest compiled and minified JS -->
+
+    <link rel="stylesheet" type="text/css" href="assets/css/css.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <script src = "https://cdn.emojidex.com/scripts/javascript/emojidex.min.js"></script>
+
+    <!---- Javascript ref file ---->
+    <script src=assets/javascript/access.js></script>
+
+    <!-- Firebase Reference -->
+    <!---<script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script> --->
+
+    <script src="https://www.gstatic.com/firebasejs/4.1.2/firebase.js"></script>
+</head>
+
+
+<body id="access">
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <div id="jumboaccess" class="jumbotron text-center">
+                <img id = "image" src="assets/images/PURCHASEPERKS_C1.png" alt="Image">
+                <p>The Authority on Rewards Tracking</p>
+                <!-- Split button -->
+                <div class="btn-group">
+                    <button id = "menu-btn" type="button" class="btn btn-default">Menu</button>
+                    <button id = "menu-btn-dropdown" type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                        <span class="caret"></span>
+                        <span class="sr-only">Toggle Dropdown</span>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li id="rewards" data-target="#my-rewards"
+                            data-toggle="modal"><a id = "rewards-click" href="#">Rewards</a></li>
+                        <li id="purchase-history" data-target="#mypurchase-history"
+                            data-toggle="modal"><a href="#">Purchase History</a></li>
+                        <li id="profile" data-target="#my-profile"
+                            data-toggle="modal"><a href="#">My Profile</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li id="about" data-target="#about-me"
+                            data-toggle="modal"><a href="#">About PurchasePerks</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="my-rewards" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Rewards</h4>
+                </div>
+                <div class="modal-body">
+                    <div id="milestones"></div>
+                </div>
+                <div class="modal-footer">
+                    <button id = "close-class-rewards" type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="mypurchase-history" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel1">Purchase History</h4>
+                </div>
+                <div class="modal-body">
+                    <div id="purchasehistory"></div>
+
+                </div>
+                <div class="modal-footer">
+                    <button id = "close-class-purchase-history" type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="my-profile" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel2"> My Profile</h4>
+                </div>
+                <div class="modal-body">
+                    <div>
+                        <h1 id="profile_greeting"></h1>
+                    </div>
+                    <div>
+                        <img src="" id="profile_image" />
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button id = "close-class-profile" type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="about-me" tabindex="-1" role="dialog" aria-labelledby="myModalLabel3">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel3">About PurchasePerks</h4>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        <h2>Team Savages</h2>
+                    </p>
+
+                    <p> There are many variations of passages of Lorem Ipsum available,
+                        but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.
+                        If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.
+                        All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet.
+                        It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable.
+                        The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc. </p>
+                </div>
+                <div class="modal-footer">
+                    <button id = "close-class-about" type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

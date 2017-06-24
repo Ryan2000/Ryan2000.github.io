@@ -1,0 +1,212 @@
+
+html{
+    height: 100%;
+}
+
+
+.container {
+    min-width:100%;
+}
+
+#log-in-btn {
+    margin-right: 100px;
+    margin-bottom: 10px;
+    background-color: #1497A3;
+    color: white;
+    margin-top: 120px;
+    padding-right: 30px;
+    padding-left: 30px;
+    opacity: .80;
+}
+
+
+#sign-up-btn {
+    margin-right: 100px;
+    background-color: #1497A3;
+    color: white;
+    padding-right: 30px;
+    padding-left: 21px;
+    opacity: .80;
+}
+
+.jumbotron {
+    background-color: #1497A3;
+    color: white;
+    height: 90%;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    margin-top: 20px;
+    opacity: .80;
+}
+
+/*Tim edit*/
+.modal-content, .modal-header{
+    background-color: white;
+    opacity: .80;
+    color: #1497A3;
+}
+
+/*Tim edits index.html*/
+#login-submit-btn{
+    background-color: #1497A3;
+    color: white;
+}
+
+/*Tim edits index.html*/
+#add-a-train, #add-user-btn {
+    background-color: #1497A3;
+    color: white;
+}
+
+/*Tim edits index.html*/
+#close-btn{
+    background-color: white;
+    color: #1497A3;
+}
+#InputUserName, #InputPassword{
+    background-color: white;
+    color: #1497A3;
+}
+
+input{
+    margin: 0 auto;
+}
+/*Tim edit*/
+#first-name, #last-name, #email-input, #user-name,
+#password-input, #cell-phone-number, #date-of-birth, #close-btn {
+    color: #1497A3;
+}
+
+body {
+    background-image: url("../images/brooke-lark-250695_720.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100%;
+    width: 100%;
+    margin-right:20px;
+    min-height: 100%;
+}
+
+#access {
+    background-image: url("../images/dayne-topkin-101955.jpg");
+    min-height: 100%;
+    width: 100%;
+    background-size: cover;
+
+}
+
+#jumboaccess {
+    background-color: #1497A3;
+    color: white;
+    height: 90%;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    margin-top: 20px;
+    opacity: .80;
+}
+
+#InputUserName {
+
+}
+
+#InputPassword {
+    margin-top: 10px
+}
+
+#login-submit-btn {
+    margin-top: 10px;
+}
+
+/*Tim Edits access.html*/
+#menu-btn, #menu-btn-dropdown, #myModalLabel{
+    background-color: white;
+    color: #1497A3;
+}
+/*Tim Edits access.html*/
+#close-class-profile, #close-class-about, #close-class-rewards, #close-class-purchase-history{
+    background-color: white;
+    color: #1497A3;
+}
+
+
+#emoji-class{
+    display: inline-block!important;
+    position: relative;
+    width: 1.2em;
+    height: 1.2em;
+    top: -.1em;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+}
+
+
+#footer-bar {
+    background-color: #1497A3;
+    color: white;
+    height: 100%;
+    padding-top: 5px;
+    padding-bottom: 20px;
+    opacity: .80;
+}
+
+
+/* ------------------------------ Media Queries ------------------------------ */
+/* --------------------------- Desktop Media Query --------------------------- */
+@media screen and (max-width: 980px) {
+    body {
+        width: 700px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #image {
+        background-image: url("../images/PURCHASEPERKS_C1.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 100%;
+        width: 100%;
+        margin-right:20px;
+        min-height: 100%;
+    }
+}
+
+/* --------------------------- Tablet Media Query --------------------------- */
+@media screen and (max-width: 768px) {
+    body {
+        width: 480px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+#image {
+    background-image: url("../images/PURCHASEPERKS_C1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100%;
+    width: 100%;
+    margin-right:20px;
+    min-height: 100%;
+}
+
+/* --------------------------- Smartphone Media Query --------------------------- */
+@media screen and (max-width: 640px) {
+    body {
+        width: 370px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #image {
+        background-image: url("../images/PURCHASEPERKS_C1.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 100%;
+        width: 100%;
+        margin-right: 20px;
+        min-height: 100%;
+    }
+}
+
+
