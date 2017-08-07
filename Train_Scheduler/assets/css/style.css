@@ -1,0 +1,18 @@
+
+
+
+html{
+    height: 100%;
+}
+
+
+body {
+    background-image: url("./image/train station Danbury.JPG");
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100%;
+}
+
+#blanket{
+    opacity:.45;
+}
