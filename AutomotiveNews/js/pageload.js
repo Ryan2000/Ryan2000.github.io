@@ -41,7 +41,7 @@ $(document).ready(function() {
                 article.byline,
                 "</div>",
                 "<div>",
-                "<img src='", article.image,"'></img>",
+                "<img class='article_image' src='", article.image,"'></img>",
                 "</div>",
                 "</div>",
                 "</div>",
@@ -77,7 +77,8 @@ $(document).ready(function() {
     function initPage() {
         // Empty the article container, run an AJAX request for any saved headlines
         articleContainer.empty();
-        $.get("https://autoscraper.herokuapp.com/api/selected").then(function(data) {
+        //$.get("https://autoscraper.herokuapp.com/api/selected").then(function(data) {
+        $.get("http://localhost:8080/api/selected").then(function(data) {
             // If we have headlines, render them to the page
             console.log(data);
             renderArticles(data);

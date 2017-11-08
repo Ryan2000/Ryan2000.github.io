@@ -36,3 +36,13 @@
 .article-container {
     display: none;
 }
+
+
+.article_image {
+    max-width:650px;
+}
+
+.moto-logo {
+    height:100%;
+    width:100%;
+}
