@@ -12,9 +12,17 @@ $(document).ready(function() {
 
 
     function createPanel(article) {
-        // This functiont takes in a single JSON object for an article/headline
+        // This function takes in a single JSON object for an article/headline
         // It constructs a jQuery element containing all of the formatted HTML for the
         // article panel
+        var publication;
+        if(article.publication === 'Motor_Trend'){
+            publication = "Motor Trend";
+        } else if (article.publication === 'Jalopnik'){
+            publication = "Jalopnik";
+        }
+
+
         var panel = $(
             [
                 "<div class='card'>",
@@ -22,8 +30,8 @@ $(document).ready(function() {
                 "<div>",
                 "<div>",
 
-                "<div class='article-logo moto-logo'>",
-                article.logo,
+                "<div>",
+                '<h1>' + publication + '</h1>',
                 "</div>",
 
                 "</div>",
