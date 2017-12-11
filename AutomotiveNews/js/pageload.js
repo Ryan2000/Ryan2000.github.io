@@ -49,7 +49,7 @@ $(document).ready(function() {
                 article.byline,
                 "</div>",
                 "<div>",
-                "<img class='article_image' src='", article.image,"'></img>",
+                "<img class='img-fluid article_image' src='", article.image,"'></img>",
                 "</div>",
                 "</div>",
                 "</div>",
