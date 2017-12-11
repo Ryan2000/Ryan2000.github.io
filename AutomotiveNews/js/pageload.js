@@ -88,7 +88,8 @@ $(document).ready(function() {
         //$.get("https://autoscraper.herokuapp.com/api/selected").then(function(data) {
 
         showPreloader();
-        $.get("https://autoscraper.herokuapp.com/api/selected").then(function(data) {
+        //$.get("https://autoscraper.herokuapp.com/api/selected?truncated=true?selected=true").then(function(data) {
+        $.get("http://localhost:8080/api/selected?truncated=true?selected=true").then(function(data) {
             // If we have headlines, render them to the page
             console.log(data);
             renderArticles(data);
